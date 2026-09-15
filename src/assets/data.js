@@ -40,8 +40,9 @@ import cardrift from "./Car_drifting_forms_text_20260914025241.mp4"
 import redcar from "./Red_car_driving_mountain_road_20260914122708.mp4"
 import mustang from "./mustag.jpg"
 import bentley from "./bentley.jpg"
-import coupe from "./con.jpg"
+import coupe from "./images (2).jpg"
 import hatchback from "./hatchback.jpg"
+
 export const assets = {
   logo,
   heroCar,
