@@ -33,6 +33,18 @@ const cars = [
   ["Toyota Corolla Altis", "Sedan", "4,200,000", "7600 / day", "Automatic", "5", "Petrol", "21000", assets.toyotaSedan, "Reliable sedan with efficient performance, easy handling, and a comfortable daily-driving setup.", "Silver"],
 ];
 
+const partnerLogos = [
+  [assets.toyota, "Rentroo"],
+  [assets.kn, "Land Cruiser"],
+  [assets.deepal, "Haval"],
+  [assets.honda, "Kia"],
+  [assets.tesla, "Toyota"],
+  [assets.roll, "Premium fleet"],
+   [assets.mercedes, "Premium fleet"],
+    [assets.lexus, "Premium fleet"],
+     [assets.bmw, "Premium fleet"],
+];
+
 const BookingForm = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ destination: "", pickup: "", dropoff: "" });
@@ -55,16 +67,32 @@ const BookingForm = () => {
 };
 
 const VehicleCard = ({ car }) => (
-  <article className={`vehicle-card ${car[10]}`}>
+  <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 shadow-sm shadow-black/10 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+    <img src={car[8]} alt={car[0]} className="h-44 w-full rounded-md object-cover" />
 
-    <div className="vehicle-heading"><div>
-      <h3>{car[0]}</h3>
-      <p>{car[1]}</p>
-    </div><strong>{car[2]} <i>|</i> {car[3]}</strong>
+    <div className="mt-4 flex flex-1 flex-col px-1">
+      <h3 className="text-xl font-semibold text-gray-900">{car[0]}</h3>
+      <p className="mt-2 text-sm text-gray-500">{car[1]}</p>
+
+      <p className="mt-3 text-base font-semibold text-sky-500">
+        {car[2]} <span className="text-gray-400">|</span> {car[3]}
+      </p>
+
+      <div className="mt-4 flex flex-wrap gap-2 text-sm text-zinc-500">
+        <span className="rounded-full bg-gray-100 px-2 py-1">{car[4]}</span>
+        <span className="rounded-full bg-gray-100 px-2 py-1">{car[5]} Seats</span>
+        <span className="rounded-full bg-gray-100 px-2 py-1">{car[6]}</span>
+      </div>
+
+      <div className="mt-4 border-t border-gray-200 pt-3 text-sm text-zinc-500">
+        <div className="flex items-center justify-between gap-3">
+          <span>{car[7]} km</span>
+          <span>{car[1]}</span>
+        </div>
+      </div>
+
+      <p className="mt-4 text-sm leading-6 text-zinc-500">{car[9]}</p>
     </div>
-    <div className="vehicle-image"><img src={car[8]} alt={car[0]} /></div>
-    <div className="specs"><span>◉<b>{car[4]}</b></span><span>♙<b>{car[5]}</b></span><span>◫<b>{car[6]}</b></span><span>♧<b>{car[7]}</b></span></div>
-    <p className="vehicle-description">{car[9]}</p>
   </article>
 );
 
@@ -99,11 +127,20 @@ const Home = () => {
       </div>
       <div className="supporting-images">
         <img className="tall-image" src={assets.haval} alt="Black Haval SUV" />
-        <img className="short-image" src={assets.add} alt="Gray Kia SUV" />
+        <img className="short-image" src={assets.jetour} alt="Gray Kia SUV" />
+      </div>
+    </section>
+    <section className="marquee-section page-wrap" aria-label="Rentroo fleet partners">
+      <div className="marquee-window">
+        <div className="marquee-inner">
+          {[...partnerLogos, ...partnerLogos].map(([image, name], index) => (
+            <img key={`${name}-${index}`} src={image} alt={name} draggable="false" />
+          ))}
+        </div>
       </div>
     </section>
 
-    <section className="listing-section page-wrap">
+    <section className="listing page-wrap">
       <div className="listing-intro">
         <div>
           <p className="eyebrow">Your Next Car Awaits</p>
@@ -112,12 +149,15 @@ const Home = () => {
         <p className="lead">Find reliable car with transparent pricing, verified inspections, flexible pickup and delivery options, and 24/7 customer support for a smooth rental or buying experience.</p>
       </div>
       <div className="listing-toolbar">
-        <strong>Displaying 1–9 from 3k listings</strong>
+        <strong>Displaying 1–12 from 3k listings</strong>
         <button className="filter-button" aria-label="Filter listings">
           <Sliders />
         </button>
       </div>
-      <div className="vehicle-grid">{cars.map((car) => <VehicleCard car={car} key={car[0]} />)}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {cars.map((car) => (
+          <VehicleCard car={car} key={car[0]} />
+        ))}
       </div>
     </section>
 

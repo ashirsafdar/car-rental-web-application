@@ -1,21 +1,47 @@
-import logo from "./images (3).jpg";
+import logo from "./image (3).jpg.png";
 import heroCar from "./lc 300.png";
 import haval from "./Haval-H6-PHEV-1.webp";
 import sonata from "./images (4).jpg";
 import kia from "./images (5).jpg";
-import pickup from "./images (2).jpg";
+import pickup from "./images.jpg";
 import corolla from "./Toyota_Corolla_10th.jpg";
 import cover from "./Cover.jpg";
 import add from "./images (6).jpg";
 import jaecoo from "./images (7).jpg";
-import jetour from "./images (8).jpg";
+import jetour from "./jetour.png";
 import changan from "./images (9).jpg";
 import mgSuv from "./images (10).jpg";
 import electricSuv from "./images (11).jpg";
 import civic from "./images (12).jpg";
-import prado from "./images (14).jpg";
-import toyotaSedan from "./images.jpg";
+import prado from "./fortuner.png";
+import toyotaSedan from "./images (4).jpg";
 import RR from "./RR.jpg";
+import Saloon from "./images(15).jpg";
+import SS from "./images (5).jpg";
+import aqua from "./images.jpg";
+import century from "./image (3).jpg.png";
+import yaris from "./images (6).jpg";
+import alphard from "./images (5).jpg";
+import prius from "./images (7).jpg";
+import tank from "./Cover.jpg";
+import sportage from "./images (1).jpg";
+import fj from "./images.jpg";
+import cc from "./crown.png"
+import bmw from "./bmw.jpg"
+import deepal from "./deepal.jpg"
+import tesla from "./tesla.png"
+import kn from "./kn.png"
+import lexus from "./lexus.png"
+import mercedes from "./mercedes.jpg"
+import toyota from "./toyota.png"
+import honda from "./honda.jpg"
+import roll from "./rol.png"
+import cardrift from "./Car_drifting_forms_text_20260914025241.mp4"
+import redcar from "./Red_car_driving_mountain_road_20260914122708.mp4"
+import mustang from "./mustag.jpg"
+import bentley from "./bentley.jpg"
+import coupe from "./con.jpg"
+import hatchback from "./hatchback.jpg"
 export const assets = {
   logo,
   heroCar,
@@ -35,4 +61,503 @@ export const assets = {
   prado,
   toyotaSedan,
   RR,
+  Saloon,
+  SS,
+  aqua,
+  century,
+  yaris,
+  alphard,
+  prius,
+  tank,
+  sportage,
+  fj,
+  cc,
+  bmw,
+  deepal,
+  tesla,
+  kn,
+  lexus,
+  mercedes,
+  toyota,
+  honda,
+  roll,
+  cardrift,
+  redcar,
+  mustang,
+  bentley,
+  coupe, 
+  hatchback,
 };
+
+export const cars = [
+  {
+    id: "LC 300",
+    name: "Toyota land cruiser LC 300",
+    category: "SUV",
+    purchasePrice: "5,00,00,000",
+    rentalPrice: "30000.00 / day",
+    transmission: "Automatic",
+    seats: 7,
+    fuel: "high-octane petrol",
+    mileage: 12500,
+    image: heroCar,
+    images: [heroCar, heroCar, heroCar],
+    description:
+      "five-door SUV with sharp handling, responsive turbocharged engine, and a driver-focused cockpit suited for spirited drives and short trips.",
+    color: "white",
+    location: "park veiw city,Lahore, Pakistan",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Niazi Motors",
+      badge: "Agency",
+      office: "Agency Office",
+      phone: "+923001234567",
+      email: "contact@niazimotors.com",
+    },
+  },
+  {
+    id: "TOYOTA-ALPHARD",
+    name: "Toyota Alphard",
+    category: "Van",
+    purchasePrice: "2,90,000",
+    rentalPrice: "5,990.00 / day",
+    transmission: "Automatic",
+    seats: 5,
+    fuel: "Hybrid",
+    mileage: 46000,
+    image: kia,
+    images: [kia, jaecoo, prado],
+    description:
+      "Mid-size SUV with robust chassis, elevated ride height, and all-wheel capability for city driving and weekend escapes.",
+    color: "White",
+    location: "bahria town,Lahore, Pakistan",
+    rating: 4.8,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Velvet Auto",
+      badge: "Agency",
+      office: "Westside Office",
+      phone: "+923001234567",
+      email: "booking@velvetauto.com",
+    },
+  },
+  {
+    id: "Honda-civic-rs",
+    name: "Honda Civic RS",
+    category: "Sedan",
+    purchasePrice: "1,90,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Manual",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: 18500,
+    image: civic,
+    images: [civic, cover, toyotaSedan],
+    description:
+      "Compact hatchback built for efficient city driving, easy parking, and a responsive, sporty feel with premium details.",
+    color: "green",
+    location: "76 Dock Street, Miami, USA",
+    rating: 4.7,
+    features: ["Rear Camera", "Apple CarPlay", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Northline Rentals",
+      badge: "Agency",
+      office: "Downtown Hub",
+      phone: "+1444555000",
+      email: "hello@northlinerentals.com",
+    },
+  },
+  {
+    id: "toyota corolla SR",
+    name: "Toyota Corolla SR",
+    category: "Sedan",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 5,
+    fuel: "Petrol",
+    mileage: 29500,
+    image: corolla,
+    images: [corolla, add, prado],
+    description:
+      "Luxury sedan with executive comfort, quiet cabin refinement, and smooth power delivery for a premium driving experience.",
+    color: "silver",
+    location: "29 Alexanderplatz, Berlin, Germany",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Metero Rentals",
+      badge: "Agency",
+      office: "Berlin Office",
+      phone: "+923001234567",
+      email: "bookings@meterorentals.de",
+    },
+  },
+  {
+    id: "Jetour T2",
+    name: "Jetour T2",
+    category: "SUV",
+    purchasePrice: "35,000",
+    rentalPrice: "4,990.00 / day",
+    transmission: "Automatic",
+    seats: 7,
+    fuel: "Hybrid",
+    mileage: 12000,
+    image: jetour,
+    images: [jetour, changan, mgSuv],
+    description:
+      "Electric performance sedan combining instant acceleration, a focused cabin, and a refined, luxury touring experience.",
+    color: "pink",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 4.9,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Elite",
+      badge: "Agency",
+      office: "Monte Carlo Office",
+      phone: "+37740000000",
+      email: "rental@monacoelite.mc",
+    },
+  },
+  {
+    id: "MG ZS EV",
+    name: "MG ZS EV",
+    category: "SUV",
+    purchasePrice: "44,0000",
+    rentalPrice: "4,990.00 / day",
+    transmission: "Automatic",
+    seats: 4,
+    fuel: "Electric",
+    mileage: 22500,
+    image: mgSuv,
+    images: [mgSuv, electricSuv, sonata],
+    description:
+      "Convertible roadster with a responsive chassis, open-top thrills, and a balanced power curve for scenic drives.",
+    color: "silver",
+    location: "14 Riviera Drive, Nice, France",
+    rating: 4.8,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Cote Blue Motors",
+      badge: "Agency",
+      office: "Nice Marina Office",
+      phone: "+33450000000",
+      email: "bookings@coteblue.fr",
+    },
+  },
+  {
+    id: "toyota-fortuner",
+    name: "Toyota Fortuner",
+    category: "SUV",
+    purchasePrice: "1,20,0000",
+    rentalPrice: "5,9909.00 / day",
+    transmission: "Automatic",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: 27800,
+    image: prado,
+    images: [prado, haval, RR],
+    description:
+      "Modern luxury SUV with elevated comfort, all-road capability, and a highly refined cabin designed for long-distance comfort.",
+    color: "gray",
+    location: "48 Arden Road, London, UK",
+    rating: 4.9,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Harrow Fleet",
+      badge: "Agency",
+      office: "Central London",
+      phone: "+442033333333",
+      email: "admins@harrowfleet.co.uk",
+    },
+  },
+  {
+    id: "toyota corolla saloon",
+    name: "Toyota Corolla SR",
+    category: "Sedan",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: Saloon,
+    images: [Saloon, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+  {
+    id: "toyota Prius",
+    name: "Toyota Prius",
+    category: "Hatchback",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: jaecoo,
+    images: [jaecoo, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+  {
+    id: "toyota crown",
+    name: "Toyota Crown",
+    category: "Sedan",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: cc,
+    images: [cc, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+  {
+    id: "toyota yaris",
+    name: "Toyota Yaris",
+    category: "Sedan",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: yaris,
+    images: [yaris, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+  {
+    id: "haval tank",
+    name: "Haval Tank",
+    category: "SUV",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: tank,
+    images: [tank, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+  {
+    id: "kia sportage",
+    name: "Kia Sportage",
+    category: "SUV",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: sportage,
+    images: [sportage, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+    {
+    id: "fj cruiser",
+    name: "FJ Cruiser",
+    category: "SUV",
+    purchasePrice: "1,80,0000",
+    rentalPrice: "2,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Petrol",
+    mileage: 9100,
+    image: fj,
+    images: [fj, logo, civic],
+    description:
+      "Supercar-level coupe with dramatic styling, razor-sharp response, and a thrilling powertrain built for unforgettable drives.",
+    color: "blue",
+    location: "10 Avenue Princess Grace, Monaco",
+    rating: 5,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Monaco Rush",
+      badge: "Agency",
+      office: "Harbor Office",
+      phone: "+37755500000",
+      email: "support@monacorush.mc",
+    },
+  },
+   {
+    id: "coupe",
+    name: "Coupe",
+    category: "Coupe",
+    purchasePrice: "2,90,000",
+    rentalPrice: "5,990.00 / day",
+    transmission: "Automatic",
+    seats: 2,
+    fuel: "Hybrid",
+    mileage: 46000,
+    image: coupe,
+    images: [coupe, jaecoo, prado],
+    description:
+      "Mid-size SUV with robust chassis, elevated ride height, and all-wheel capability for city driving and weekend escapes.",
+    color: "White",
+    location: "bahria town,Lahore, Pakistan",
+    rating: 4.8,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Velvet Auto",
+      badge: "Agency",
+      office: "Westside Office",
+      phone: "+923001234567",
+      email: "booking@velvetauto.com",
+    },
+  },
+   {
+    id: "Bentley",
+    name: "Bentley",
+    category: "Grand Tourer",
+    purchasePrice: "2,90,000",
+    rentalPrice: "5,990.00 / day",
+    transmission: "Automatic",
+    seats: 5,
+    fuel: "petrol",
+    mileage: 46000,
+    image: bentley,
+    images: [bentley, jaecoo, prado],
+    description:
+      "Mid-size SUV with robust chassis, elevated ride height, and all-wheel capability for city driving and weekend escapes.",
+    color: "White",
+    location: "bahria town,Lahore, Pakistan",
+    rating: 4.8,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Velvet Auto",
+      badge: "Agency",
+      office: "Westside Office",
+      phone: "+923001234567",
+      email: "booking@velvetauto.com",
+    },
+  },
+  {
+     id: "Mustang",
+    name: "Mustang",
+    category: "Convertible",
+    purchasePrice: "2,90,000",
+    rentalPrice: "5,990.00 / day",
+    transmission: "Automatic",
+    seats: 5,
+    fuel: "petrol",
+    mileage: 46000,
+    image: mustang,
+    images: [mustang, jaecoo, prado],
+    description:
+      "Mid-size SUV with robust chassis, elevated ride height, and all-wheel capability for city driving and weekend escapes.",
+    color: "White",
+    location: "bahria town,Lahore, Pakistan",
+    rating: 4.8,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Velvet Auto",
+      badge: "Agency",
+      office: "Westside Office",
+      phone: "+923001234567",
+      email: "booking@velvetauto.com",
+    },
+  },
+   {
+    id: "Toyota yaris hatchback",
+    name: "Toyota yaris hatchback",
+    category: "Hatchback",
+    purchasePrice: "2,90,000",
+    rentalPrice: "5,990.00 / day",
+    transmission: "Automatic",
+    seats: 4,
+    fuel: "Hybrid",
+    mileage: 46000,
+    image: hatchback,
+    images: [hatchback, jaecoo, prado],
+    description:
+      "Mid-size SUV with robust chassis, elevated ride height, and all-wheel capability for city driving and weekend escapes.",
+    color: "White",
+    location: "bahria town,Lahore, Pakistan",
+    rating: 4.8,
+    features: ["Rear Camera", "Apple CarPlay", "Keyless Entry", "Adaptive Cruise", "Heated Seats", "Sunroof"],
+    owner: {
+      name: "Velvet Auto",
+      badge: "Agency",
+      office: "Westside Office",
+      phone: "+923001234567",
+      email: "booking@velvetauto.com",
+    },
+  },
+];
+
+export default cars;
