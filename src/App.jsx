@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./pages/home";
 import Listing from "./pages/listing";
@@ -11,9 +11,20 @@ import LoginPage from "./pages/login";
 import PaymentPage from "./pages/payment";
 import { AppContextProvider } from "./context/AppContext";
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const App = () => (
   <BrowserRouter>
     <AppContextProvider>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
